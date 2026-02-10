@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 function HeroSection() {
     return (
@@ -38,7 +39,7 @@ function HeroSection() {
 
                     {/* Trust Text */}
                     <p className="text-sm font-medium text-[#2B180A] tracking-tight">
-                        Trusted by 100+ fast-growing businesses
+                        Trusted by forward-thinking startups and enterprises
                     </p>
                 </motion.div>
 
@@ -50,7 +51,7 @@ function HeroSection() {
                     className="text-center"
                 >
                     <h1 className="font-[family-name:var(--font-halant)] capitalize text-[48px] md:text-[70px] leading-[1.1] font-normal text-[#2B180A] tracking-tight">
-                        Stop losing hours to tasks AI can do in minutes.
+                        From Ai confusion to Clarity
                     </h1>
                 </motion.div>
 
@@ -59,10 +60,10 @@ function HeroSection() {
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-                    className="text-center max-w-2xl"
+                    className="text-center max-w-3xl"
                 >
-                    <p className="text-base md:text-xl capitalize leading-[1.5] text-[#94877C] font-normal">
-                        We build intelligent automation that works while you sleep—custom AI agents and SaaS solutions that eliminate repetitive work, so you can focus on what actually grows your business.
+                    <p className="text-base md:text-xl capitalize leading-[1.6] text-[#94877C] font-normal">
+                        We are a digital product studio building intelligent SaaS, AI agents, and automated workflows. We help you streamline operations, reduce manual work, and scale with confidence.
                     </p>
                 </motion.div>
 
@@ -76,13 +77,10 @@ function HeroSection() {
                     {/* Primary Button */}
                     <a
                         href="#contact"
-                        className="px-6 py-3 bg-[#2B180A] text-[#FAF6F2] rounded-xl text-sm font-medium transition-all duration-300 hover:bg-[#3d2410] hover:shadow-lg hover:scale-105 active:scale-95"
+                        className="px-8 py-4 bg-[#2B180A] text-[#FAF6F2] rounded-xl text-sm font-medium transition-all duration-300 hover:bg-[#3d2410] hover:shadow-lg hover:scale-105 active:scale-95"
                     >
-                        Get your free AI roadmap
+                        Start Your Project
                     </a>
-
-                    {/* Secondary Button */}
-
                 </motion.div>
 
                 {/* Decorative Background Graphic */}
@@ -90,7 +88,7 @@ function HeroSection() {
                     initial={{ opacity: 0, y: 30, filter: "blur(20px)" }}
                     animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-                    className="relative w-full max-w-4xl h-[300px] md:h-[400px] rounded-[40px] md:rounded-[60px] overflow-hidden mt-4"
+                    className="relative w-full max-w-4xl h-[300px] md:h-[400px] rounded-[40px] md:rounded-[60px] overflow-hidden mt-8"
                 >
                     {/* Gradient Background */}
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-orange-300 to-pink-400">
@@ -114,16 +112,17 @@ function HeroSection() {
                         }}
                     />
 
-                    {/* Content Placeholder - You can add text or other elements here */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-white/80 text-center px-8">
-                            <h3 className="font-[family-name:var(--font-halant)] text-2xl md:text-4xl font-medium mb-2">
-                                Save 20+ hours every week
-                            </h3>
-                            <p className="text-sm md:text-base opacity-90">
-                                Join businesses automating their way to freedom
-                            </p>
-                        </div>
+                    {/* Hero Image (replaceable) */}
+                    <div className="absolute inset-0">
+                        <Image
+                            src="/hero-1.png"
+                            alt="Hero"
+                            fill
+                            className="object-cover"
+                            unoptimized
+                        />
+
+                        {/* No overlay text — hero image only (the attached `public/hero-1.png`) */}
                     </div>
                 </motion.div>
             </div>

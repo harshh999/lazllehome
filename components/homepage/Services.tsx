@@ -10,27 +10,33 @@ function Services() {
     const services = [
         {
             number: '01',
-            title: 'Discover',
-            description: 'We audit your workflow and pinpoint exactly where you\'re bleeding time and money—then show you how AI can plug those leaks.',
-            image: '/discover.png'
+            title: 'Custom SaaS',
+            description: 'Modular, scalable SaaS platforms tailored to your specific business needs with powerful internal tools.',
+            image: '/custom-saas.jpg',
+            bgColor: 'white',
+            textColor: 'black'
         },
         {
             number: '02',
-            title: 'Build',
-            description: 'We design and develop custom AI systems tailored to your exact needs—no templates, no compromises, just solutions that fit like a glove.',
-            image: '/build.png'
+            title: 'Business Automations',
+            description: 'End-to-end workflow automation connecting your CRM, analytics, and tools into one seamless system.',
+            image: '/business-automations.jpg',
+            bgColor: 'white',
         },
         {
             number: '03',
-            title: 'Deploy',
-            description: 'We integrate everything seamlessly into your existing stack—zero disruption, maximum impact, and your team is up and running in days, not months.',
-            image: '/deploy.png'
+            title: 'AI Agents',
+            description: 'Intelligent AI agents that automate complex conversations and workflows to scale your operations.',
+            image: '/ai-agents.jpg',
+            bgColor: 'white',
         },
         {
             number: '04',
-            title: 'Optimize',
-            description: 'We monitor, refine, and scale your systems as you grow—ensuring you\'re always getting maximum ROI from your automation investment.',
-            image: '/optimize.png'
+            title: 'Web Services',
+            description: 'Conversion-focused marketing sites and SaaS dashboards designed for high-performance business growth.',
+            image: '/web-services.png',
+            bgColor: 'white',
+            textColor: 'dark'
         }
     ]
 
@@ -50,10 +56,10 @@ function Services() {
                     </div>
 
                     <h2 className="font-[family-name:var(--font-halant)] text-4xl md:text-5xl lg:text-6xl font-normal text-foreground mb-4">
-                        You focus on growth. We handle the rest.
+                        Comprehensive solutions for modern growth.
                     </h2>
                     <p className="text-lg md:text-xl text-muted max-w-3xl mx-auto">
-                        From discovery to deployment, we manage every step of your AI transformation—so you can stay focused on what you do best.
+                        We combine elite design, engineering, and AI to build the systems that power your business.
                     </p>
                 </motion.div>
 
@@ -75,23 +81,27 @@ function Services() {
                                     alt={service.title}
                                     fill
                                     className="object-cover"
+                                    unoptimized
                                 />
                             </div>
 
                             {/* Mobile Details */}
-                            <div>
+                            <div
+                                className="p-6 rounded-[2rem]"
+                                style={{ backgroundColor: service.bgColor }}
+                            >
                                 <div className="flex items-center gap-3 mb-3">
-                                    <span className="text-sm font-medium text-muted/60">{service.number}</span>
-                                    <h3 className="font-[family-name:var(--font-halant)] text-3xl font-normal text-foreground">
+                                    <span className={`text-sm font-medium ${service.textColor === 'white' ? 'text-white/60' : 'text-foreground/60'}`}>{service.number}</span>
+                                    <h3 className={`font-[family-name:var(--font-halant)] text-3xl font-normal ${service.textColor === 'white' ? 'text-white' : 'text-foreground'}`}>
                                         {service.title}
                                     </h3>
                                 </div>
-                                <p className="text-lg text-muted leading-relaxed mb-6">
+                                <p className={`text-lg leading-relaxed mb-6 ${service.textColor === 'white' ? 'text-white/80' : 'text-foreground/80'}`}>
                                     {service.description}
                                 </p>
                                 <a
                                     href="#contact"
-                                    className="inline-flex items-center gap-3 text-foreground font-medium group pb-1 border-b border-foreground/20 hover:border-foreground transition-all duration-300"
+                                    className={`inline-flex items-center gap-3 font-medium group pb-1 transition-all duration-300 ${service.textColor === 'white' ? 'text-white border-b border-white/20 hover:border-white' : 'text-foreground border-b border-foreground/20 hover:border-foreground'}`}
                                 >
                                     <span>Book a free call</span>
                                     <div className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1">
@@ -118,18 +128,17 @@ function Services() {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 onMouseEnter={() => setActiveService(index)}
                                 onClick={() => setActiveService(index)}
+                                style={{ backgroundColor: service.bgColor }}
                                 className={`group relative p-6 md:p-10 rounded-[2rem] cursor-pointer transition-all duration-300 ${activeService === index
-                                    ? 'bg-[#F3F1EB] scale-100'
-                                    : 'bg-transparent hover:bg-black/[0.02] opacity-50 hover:opacity-100'
+                                    ? 'scale-100'
+                                    : 'opacity-70 hover:opacity-100'
                                     }`}
                             >
                                 <div className="flex items-start gap-1 relative z-10">
-                                    <h3 className={`font-[family-name:var(--font-halant)] text-5xl md:text-6xl lg:text-7xl leading-[0.9] font-normal transition-colors duration-300 ${activeService === index ? 'text-foreground' : 'text-foreground'
-                                        }`}>
+                                    <h3 className={`font-[family-name:var(--font-halant)] text-3xl md:text-4xl lg:text-5xl leading-[1.1] font-normal ${service.textColor === 'white' ? 'text-white' : 'text-foreground'}`}>
                                         {service.title}
                                     </h3>
-                                    <span className={`text-base font-medium font-sans translate-y-1 transition-colors duration-300 ${activeService === index ? 'text-foreground' : 'text-foreground'
-                                        }`}>
+                                    <span className={`text-base font-medium font-sans translate-y-1 ${service.textColor === 'white' ? 'text-white/60' : 'text-foreground/60'}`}>
                                         {service.number}
                                     </span>
                                 </div>
@@ -156,20 +165,24 @@ function Services() {
                                         fill
                                         className="object-cover"
                                         priority
+                                        unoptimized
                                     />
                                 </div>
 
                                 {/* Service Details */}
-                                <div className="max-w-2xl">
-                                    <h4 className="font-[family-name:var(--font-halant)] text-3xl md:text-4xl font-normal text-foreground mb-4">
+                                <div
+                                    className="max-w-2xl p-8 md:p-10 rounded-[2rem]"
+                                    style={{ backgroundColor: services[activeService].bgColor }}
+                                >
+                                    <h4 className={`font-[family-name:var(--font-halant)] text-3xl md:text-4xl font-normal mb-4 ${services[activeService].textColor === 'white' ? 'text-white' : 'text-foreground'}`}>
                                         {services[activeService].title}
                                     </h4>
-                                    <p className="text-lg md:text-xl text-muted leading-relaxed mb-8">
+                                    <p className={`text-lg md:text-xl leading-relaxed mb-8 ${services[activeService].textColor === 'white' ? 'text-white/80' : 'text-foreground/80'}`}>
                                         {services[activeService].description}
                                     </p>
                                     <a
                                         href="#contact"
-                                        className="inline-flex items-center gap-3 text-foreground font-medium group pb-1 border-b border-foreground/20 hover:border-foreground transition-all duration-300"
+                                        className={`inline-flex items-center gap-3 font-medium group pb-1 transition-all duration-300 ${services[activeService].textColor === 'white' ? 'text-white border-b border-white/20 hover:border-white' : 'text-foreground border-b border-foreground/20 hover:border-foreground'}`}
                                     >
                                         <span>Book a free call</span>
                                         <div className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1">

@@ -132,16 +132,16 @@ function Faq() {
                     className="text-center mt-16 p-8 md:p-12 bg-foreground rounded-3xl"
                 >
                     <h3 className="font-[family-name:var(--font-halant)] text-3xl md:text-4xl font-normal text-background mb-4">
-                        Ready to reclaim your time?
+                        Ready to upgrade your company's operating system?
                     </h3>
                     <p className="text-lg text-background/80 mb-6">
-                        Book a free AI audit and we\'ll show you exactly where you\'re losing hours—and how to get them back.
+                        Stop drowning in manual work. Start building the future of your business today.
                     </p>
                     <a
                         href="#contact"
                         className="inline-flex items-center px-8 py-4 bg-background text-foreground rounded-xl text-base font-medium transition-all duration-300 hover:bg-background/90 hover:shadow-lg hover:scale-105"
                     >
-                        Book your free AI audit
+                        Book a consultation
                     </a>
                 </motion.div>
             </div>

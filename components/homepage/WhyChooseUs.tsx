@@ -17,8 +17,8 @@ function WhyChooseUs() {
                     />
                 </svg>
             ),
-            title: 'Lightning-Fast Results',
-            description: 'Live in weeks, not months. We ship fast because we know every day you wait is money left on the table.'
+            title: 'Next-Gen Websites',
+            description: 'Websites that talk to your CRM and WhatsApp—not just static pages. We build digital experiences that actively capture leads and drive conversions.'
         },
         {
             icon: (
@@ -32,8 +32,8 @@ function WhyChooseUs() {
                     />
                 </svg>
             ),
-            title: 'Built for Your Business',
-            description: 'No templates. No shortcuts. Every solution is custom-engineered for your exact workflow—because your business isn\'t cookie-cutter.'
+            title: '24/7 AI Agents',
+            description: 'AI calling and chat agents that qualify leads, book meetings, and handle support instantly—scaling your team without increasing overhead.'
         },
         {
             icon: (
@@ -47,8 +47,8 @@ function WhyChooseUs() {
                     />
                 </svg>
             ),
-            title: 'Always-On Support',
-            description: 'We don\'t disappear after launch. Ongoing training, optimization, and support—so your systems keep delivering as you scale.'
+            title: 'Unified Dashboards',
+            description: 'Real-time dashboards that consolidate marketing, sales, and ops metrics into one view, giving you total visibility and control.'
         },
         {
             icon: (
@@ -59,8 +59,8 @@ function WhyChooseUs() {
                     />
                 </svg>
             ),
-            title: 'Proven Track Record',
-            description: '100+ businesses transformed. Hundreds of hours saved weekly. Real results you can measure—not vague promises.'
+            title: 'Zero-Touch Workflows',
+            description: 'Automated pipelines that move data between forms, CRM, billing, and support tools with zero manual intervention.'
         },
         {
             icon: (
@@ -88,8 +88,8 @@ function WhyChooseUs() {
                     />
                 </svg>
             ),
-            title: 'Built to Scale',
-            description: 'Your automation grows with you. We build systems that handle 10x the volume without breaking a sweat.'
+            title: 'Scalable Architecture',
+            description: 'We build systems designed for growth. Multi-tenant architecture and robust security ensure your tech stack never holds you back.'
         },
         {
             icon: (
@@ -117,8 +117,8 @@ function WhyChooseUs() {
                     />
                 </svg>
             ),
-            title: 'Deep AI Expertise',
-            description: 'We live and breathe AI automation. Our team knows exactly how to apply cutting-edge tech to real-world business problems.'
+            title: 'Actionable Intelligence',
+            description: 'Turn raw data into business insights. We eliminate silos so your teams have the right information at the right time.'
         }
     ]
 
@@ -134,13 +134,13 @@ function WhyChooseUs() {
                     className="text-center mb-16 md:mb-20"
                 >
                     <div className="inline-block px-4 py-2 bg-button-secondary rounded-full mb-6">
-                        <span className="text-sm font-medium text-foreground">Why choose us</span>
+                        <span className="text-sm font-medium text-foreground">Capabilities</span>
                     </div>
                     <h2 className="font-[family-name:var(--font-halant)] text-4xl md:text-5xl lg:text-6xl font-normal text-foreground mb-6">
-                        Why smart businesses choose us.
+                        Outcomes, not just outputs.
                     </h2>
                     <p className="text-lg md:text-xl text-muted max-w-3xl mx-auto">
-                        We don\'t just build AI systems—we build competitive advantages. Here\'s what sets us apart from everyone else claiming to "do AI."
+                        We don't just ship features. We build the connected infrastructure that results in measurable time savings and revenue growth.
                     </p>
                 </motion.div>
 

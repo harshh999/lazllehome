@@ -29,21 +29,21 @@ function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
 function WhoWeAre() {
     const stats = [
         {
-            value: 1500,
-            suffix: '+',
-            label: 'Hours saved for clients monthly',
+            value: 60,
+            suffix: '%',
+            label: 'Reduction in manual reporting time',
             gradient: 'from-teal-400/40 to-teal-500/40'
         },
         {
-            value: 35,
+            value: 100,
             suffix: '%',
-            label: 'Average reduction in manual work',
+            label: 'Data accuracy in automated workflows',
             gradient: 'from-orange-400/40 to-orange-500/40'
         },
         {
-            value: 45,
-            suffix: ' days',
-            label: 'Average time to measurable ROI',
+            value: 3,
+            suffix: 'x',
+            label: 'Faster lead response time',
             gradient: 'from-cyan-400/40 to-cyan-500/40'
         }
     ]
@@ -59,7 +59,7 @@ function WhoWeAre() {
                     transition={{ duration: 0.6 }}
                     className="inline-block px-4 py-2 bg-button-secondary rounded-full mb-8"
                 >
-                    <span className="text-sm font-medium text-foreground">Who we are</span>
+                    <span className="text-sm font-medium text-foreground">Vision</span>
                 </motion.div>
 
                 {/* Headline and Description Grid */}
@@ -72,8 +72,8 @@ function WhoWeAre() {
                         transition={{ duration: 0.7, delay: 0.1 }}
                     >
                         <h2 className="font-[family-name:var(--font-halant)] text-5xl md:text-6xl lg:text-7xl font-normal text-foreground leading-[1.1]">
-                            The AI agency built for{' '}
-                            <span className="text-muted">you.</span>
+                            Democratizing the tools of{' '}
+                            <span className="text-muted">innovation.</span>
                         </h2>
                     </motion.div>
 
@@ -86,7 +86,7 @@ function WhoWeAre() {
                         className="flex items-center"
                     >
                         <p className="text-base md:text-lg text-muted leading-relaxed">
-                            We built this agency to help businesses avoid AI overwhelm. We listen first, recommend only what works, and build systems you'll actually use—without the hype or complexity.
+                            Lazlle & Co was founded by Harsh to bridge the gap between clunky enterprise tools and fragmented SMB stacks. We are building the "operating system for modern companies"—a unified automation layer where every process is connected, efficient, and data-driven. We believe every growing business deserves access to the tools that unlock innovation, not just the Fortune 500.
                         </p>
                     </motion.div>
                 </div>
@@ -100,7 +100,7 @@ function WhoWeAre() {
                     className="relative w-full rounded-[40px] md:rounded-[60px] overflow-hidden mb-16 flex items-center justify-center min-h-[500px]"
                 >
                     {/* Gradient Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-teal-600 via-orange-500 to-pink-600">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#3E3232] via-[#503C3C] to-[#7E6363]">
                         {/* Dark Overlay for better text visibility */}
                         <div className="absolute inset-0 bg-black/20" />
 

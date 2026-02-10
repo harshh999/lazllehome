@@ -99,14 +99,14 @@ export default function RootLayout({
       "addressCountry": "IN"
     },
     "sameAs": [
-      // Add your social media profiles here
-      // "https://www.linkedin.com/company/lazlle-studio",
-      // "https://twitter.com/lazllestudio",
-      // "https://www.instagram.com/lazllestudio"
+      "https://www.linkedin.com/company/lazlle/",
+      "https://www.instagram.com/lazlle.in"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Sales",
+      "telephone": "+916351324531",
+      "email": "lazlleandco@gmail.com",
       "availableLanguage": ["English"]
     },
     "aggregateRating": {

@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer'
 import HeroSection from '@/components/homepage/HeroSection'
 import WhoWeAre from '@/components/homepage/WhoWeAre'
 import Services from '@/components/homepage/Services'
+import FlagshipProducts from '@/components/homepage/FlagshipProducts'
 import HowWeWork from '@/components/homepage/HowWeWork'
 import WhyChooseUs from '@/components/homepage/WhyChooseUs'
 import Faq from '@/components/homepage/Faq'
@@ -13,10 +14,11 @@ function page() {
     <>
       <Navbar />
       <HeroSection />
-      <WhoWeAre />
       <Services />
-      <HowWeWork />
+      <FlagshipProducts />
       <WhyChooseUs />
+      <HowWeWork />
+      <WhoWeAre />
       <Faq />
       <Footer />
     </>
